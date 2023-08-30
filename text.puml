@@ -1,0 +1,17 @@
+@startuml
+
+title Global Economic Data Analysis Project
+
+
+actor User
+participant IBMCognos
+
+User -> IBMCognos : Collect global economic data
+IBMCognos <- User : Clean and prepare data
+IBMCognos <- User : Load data
+IBMCognos -> Stakeholder : Create reports and dashboards
+IBMCognos -> Stakeholder : Analyze data and identify trends
+IBMCognos -> Stakeholder : Derive actionable insights
+IBMCognos -> Stakeholder : Share insights
+
+@enduml
